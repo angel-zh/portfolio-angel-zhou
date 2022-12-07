@@ -9,6 +9,7 @@ main {
   height: 200vh;
 }
 
+
 .banner {
   height: 100vh;
   padding-bottom: 250px;
@@ -33,6 +34,29 @@ main {
   margin-top: -75px;
   text-shadow: 0 0 10px #242f61;
 }
+.nav-icon {
+  position: absolute; 
+  top: 0;
+  right: 10px;
+  z-index: 100;
+}
+
+.icon {
+  margin: 5px;
+  opacity: 80%;
+}
+
+.quote {
+  font-size: 1.2rem;
+  text-align: end;
+  color: white
+}
+
+.quote p {
+  text-align: start;
+}
+
+
 
 @keyframes glow {
   from {

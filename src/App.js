@@ -1,6 +1,9 @@
 import React from 'react'
 import { ParallaxProvider, ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 import { Container } from '@mui/material';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import './index.css'
 
 import layer1 from './images/1.png'
@@ -15,8 +18,12 @@ import layer8 from './images/8.png'
 function App() {
   return (
     <main>
+
       <ParallaxProvider>
         <header>
+
+
+
           <ParallaxBanner className='banner'>
             <ParallaxBannerLayer
               image={layer1}
@@ -71,14 +78,25 @@ function App() {
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
             />
-
-
           </ParallaxBanner>
         </header>
       </ParallaxProvider>
-      <Container maxWidth='lg'>
-        <h1>Hello</h1>
+
+      <div className='nav-icon'>
+        <FontAwesomeIcon icon={faSquareGithub} className='icon' size='2x' />
+        <FontAwesomeIcon icon={faLinkedin} className='icon' size='2x' />
+      </div>
+
+      <Container className='quote' maxWidth='sm'>
+        <p>
+          <FontAwesomeIcon icon={faQuoteLeft} />
+          Shoot for the Moon. Even if you miss, you'll land among the stars.
+          <FontAwesomeIcon icon={faQuoteRight} />
+        </p>
+        <i>--Norman Vincent Peale</i>
       </Container>
+
+
     </main>
   )
 }
