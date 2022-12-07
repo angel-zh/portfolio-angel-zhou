@@ -1,5 +1,6 @@
 import React from 'react'
 import { ParallaxProvider, ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
+import { Container } from '@mui/material';
 import './index.css'
 
 import layer1 from './images/1.png'
@@ -23,62 +24,61 @@ function App() {
             />
             <ParallaxBannerLayer
               image={layer2}
-              translateY={[0, 50]}
+              translateY={[0, 45]}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
-            // speed={-25} 
             />
             <ParallaxBannerLayer
-              image={layer3}
-              speed={10}
-              // translateY={[0, 50]}
-              expanded={false}
-              shouldAlwaysCompleteAnimation={true}
-
-            />
-            <ParallaxBannerLayer
-              image={layer4}
               translateY={[0, 40]}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
-            // speed={-15} 
+            >
+              <h1 className='banner-h1'>Angel Zhou</h1>
+              <h2 className='banner-h2'>Full-Stack Developer</h2>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer
+              image={layer3}
+              speed={8}
+              expanded={false}
+              shouldAlwaysCompleteAnimation={true}
+            />
+            <ParallaxBannerLayer
+              image={layer4}
+              translateY={[0, 35]}
+              expanded={false}
+              shouldAlwaysCompleteAnimation={true}
             />
             <ParallaxBannerLayer
               image={layer5}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
-            
             />
             <ParallaxBannerLayer
               image={layer6}
               translateY={[0, 25]}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
-            // translateY={[]} 
             />
             <ParallaxBannerLayer
               image={layer7}
+              translate={[0, 10]}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
-             
             />
             <ParallaxBannerLayer
               image={layer8}
               translateY={[0, 5]}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
-            // translateY={[]} 
             />
 
 
-
           </ParallaxBanner>
-
-
-
-
         </header>
       </ParallaxProvider>
+      <Container maxWidth='lg'>
+        <h1>Hello</h1>
+      </Container>
     </main>
   )
 }

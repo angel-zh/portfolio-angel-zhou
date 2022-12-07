@@ -1,14 +1,48 @@
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
-  background-color: #6299e0;
+  background-color: #6197de;
 }
 
 main {
   height: 200vh;
 }
 
-.banner { 
+.banner {
   height: 100vh;
-  padding-bottom: 200px;
-} 
+  padding-bottom: 250px;
+}
+
+.banner-h1 {
+  font-family: 'Arima Madurai', cursive;
+  font-size: 5rem;
+  text-align: center;
+  color: #f3f393;
+  margin-top: 150px;
+  -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+  -moz-animation: glow 1.5s ease-in-out infinite alternate;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.banner-h2 {
+  font-family: 'Nothing You Could Do', sans-serif;
+  font-size: 2.3rem;
+  text-align: center;
+  color: #ffffff;
+  margin-top: -75px;
+  text-shadow: 0 0 10px #242f61;
+}
+
+@keyframes glow {
+  from {
+    text-shadow:
+    0 0 5px #242f61, 0 0 10px #242f61,
+    0 0 20px #242f61, 0 0 20px #242f61
+  }
+  to {
+    text-shadow:
+    0 0 5px #accde3, 0 0 10px #accde3,
+    0 0 20px #accde3, 0 0 40px #accde3;
+  }
+}
