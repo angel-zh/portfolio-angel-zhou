@@ -34,22 +34,27 @@ main {
   margin-top: -75px;
   text-shadow: 0 0 10px #242f61;
 }
-.nav-icon {
+.nav-icon-div {
   position: absolute; 
   top: 0;
   right: 10px;
   z-index: 100;
 }
 
-.icon {
+.nav-icon {
   margin: 5px;
-  opacity: 80%;
+  color: #363874;
+}
+
+.nav-icon:hover {
+  color: #a6a5d2c4;
 }
 
 .quote {
   font-size: 1.2rem;
   text-align: end;
-  color: white
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 .quote p {

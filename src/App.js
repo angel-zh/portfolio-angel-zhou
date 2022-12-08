@@ -42,7 +42,11 @@ function App() {
             >
               <h1 className='banner-h1'>Angel Zhou</h1>
               <h2 className='banner-h2'>Full-Stack Developer</h2>
+
+
             </ParallaxBannerLayer>
+
+
             <ParallaxBannerLayer
               image={layer3}
               speed={8}
@@ -82,12 +86,12 @@ function App() {
         </header>
       </ParallaxProvider>
 
-      <div className='nav-icon'>
-        <FontAwesomeIcon icon={faSquareGithub} className='icon' size='2x' />
-        <FontAwesomeIcon icon={faLinkedin} className='icon' size='2x' />
+      <div className='nav-icon-div'>
+        <a href='https://github.com/angel-zh' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faSquareGithub} className='nav-icon' size='3x' /></a>
+        <a href='https://www.linkedin.com/in/angel-q-zhou/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faLinkedin} className='nav-icon' size='3x' /></a>
       </div>
 
-      <Container className='quote' maxWidth='sm'>
+      <Container className='quote' maxWidth='md'>
         <p>
           <FontAwesomeIcon icon={faQuoteLeft} />
           Shoot for the Moon. Even if you miss, you'll land among the stars.
