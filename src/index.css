@@ -16,7 +16,7 @@ main {
 }
 
 .banner-h1 {
-  font-family: 'Arima Madurai', cursive;
+  font-family: 'Arima Madurai', sans-serif;
   font-size: 5rem;
   text-align: center;
   color: #f3f393;
@@ -50,18 +50,75 @@ main {
   color: #a6a5d2c4;
 }
 
+.scroll-icon {
+  color: #3e42a4;
+  position: absolute;
+  top: 94vh;
+  left: 49%;
+  z-index: 100;
+}
+
 .quote {
   font-size: 1.2rem;
-  text-align: end;
+  text-align: center;
   color: white;
   font-family: 'Poppins', sans-serif;
+  margin-top: -20px;
 }
 
-.quote p {
-  text-align: start;
+.author {
+  text-align: end;
+  margin-top: -20px;
+  font-size: 1rem;
 }
 
+.quote-icon {
+  margin: 0 8px;
+}
 
+.h1-heading {
+  font-family: 'Nothing You Could Do', sans-serif;
+  font-size: 3.3rem;
+  color: white;
+  text-shadow: 1px 1px 1px #222670;
+}
+
+.developer-icons-div {
+  margin: 40px 0;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap
+}
+
+.developer-icon {
+  font-size: 4.8rem;
+  text-shadow: 0 0 8px #242f61;
+  transition-duration: 0.3s;
+  padding-top: 10px;
+}
+
+.developer-icon-name {
+  visibility: hidden;
+  font-size: 1rem;
+  margin-top: -5px;
+  font-family: 'Copse', sans-serif;
+}
+
+.developer-icon:hover {
+  color: #35427e;
+  padding-top: 0;
+  padding-bottom: 10px;
+  text-shadow: 0 0 20px #d3f8fb;
+  transition-duration: 0.3s;
+}
+.developer-icon:hover .developer-icon-name {
+  visibility: visible;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 0 0 10px #35427e;
+}
 
 @keyframes glow {
   from {

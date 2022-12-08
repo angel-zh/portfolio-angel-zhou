@@ -2,7 +2,7 @@ import React from 'react'
 import { ParallaxProvider, ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 import { Container } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
+import { faAnglesDown, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import './index.css'
 
@@ -18,12 +18,8 @@ import layer8 from './images/8.png'
 function App() {
   return (
     <main>
-
       <ParallaxProvider>
         <header>
-
-
-
           <ParallaxBanner className='banner'>
             <ParallaxBannerLayer
               image={layer1}
@@ -43,10 +39,7 @@ function App() {
               <h1 className='banner-h1'>Angel Zhou</h1>
               <h2 className='banner-h2'>Full-Stack Developer</h2>
 
-
             </ParallaxBannerLayer>
-
-
             <ParallaxBannerLayer
               image={layer3}
               speed={8}
@@ -81,6 +74,7 @@ function App() {
               translateY={[0, 5]}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
+              children={<FontAwesomeIcon icon={faAnglesDown} size='2x' className='scroll-icon' bounce />}
             />
           </ParallaxBanner>
         </header>
@@ -93,11 +87,65 @@ function App() {
 
       <Container className='quote' maxWidth='md'>
         <p>
-          <FontAwesomeIcon icon={faQuoteLeft} />
+          <FontAwesomeIcon icon={faQuoteLeft} className='quote-icon' />
           Shoot for the Moon. Even if you miss, you'll land among the stars.
-          <FontAwesomeIcon icon={faQuoteRight} />
+          <FontAwesomeIcon icon={faQuoteRight} className='quote-icon' />
         </p>
-        <i>--Norman Vincent Peale</i>
+        <p className='author'><i>--Norman Vincent Peale</i></p>
+      </Container>
+
+      <Container maxWidth='lg'>
+        <h1 className='h1-heading'>Programming Skills</h1>
+        <div className='developer-icons-div'>
+          <div className='developer-icon'>
+            <i className="devicon-javascript-plain "> </i>
+            <p className="developer-icon-name">JavaScript</p>
+          </div>
+          <div className='developer-icon'>
+            <i className="devicon-html5-plain"> </i>
+            <p className="developer-icon-name">HTML</p>
+          </div>
+          <div className='developer-icon'>
+            <i className="devicon-css3-plain"> </i>
+            <p className="developer-icon-name">CSS</p>
+          </div>
+          <div className='developer-icon'>
+            <i className="devicon-react-original"> </i>
+            <p className="developer-icon-name">React</p>
+          </div>
+          <div className='developer-icon'>
+            <i className="devicon-django-plain"> </i>
+            <p className="developer-icon-name">Django</p>
+          </div>
+          <div className='developer-icon'>
+            <i className="devicon-python-plain"> </i>
+            <p className="developer-icon-name">Python</p>
+          </div>
+          <div className='developer-icon'>
+            <i className="devicon-postgresql-plain"> </i>
+            <p className="developer-icon-name">Postgres</p>
+          </div>
+          <div className='developer-icon'>
+            <i className="devicon-mongodb-plain"> </i>
+            <p className="developer-icon-name">MongoDB</p>
+          </div>
+          <div className='developer-icon'>
+            <i className="devicon-nodejs-plain"> </i>
+            <p className="developer-icon-name">Node.js</p>
+          </div>
+          <div className='developer-icon'>
+            <i className="devicon-express-original"> </i>
+            <p className="developer-icon-name">Express</p>
+          </div>
+          <div className='developer-icon'>
+            <i className="devicon-bootstrap-plain"> </i>
+            <p className="developer-icon-name">Bootstrap</p>
+          </div>
+          <div className='developer-icon'>
+            <i className="devicon-photoshop-line"> </i> 
+            <p className="developer-icon-name">Photoshop</p>
+          </div>
+        </div>
       </Container>
 
 
