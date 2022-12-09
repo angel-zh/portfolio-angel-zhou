@@ -6,7 +6,7 @@ body {
 }
 
 main {
-  height: 200vh;
+  height: 400vh;
 }
 
 
@@ -20,7 +20,7 @@ main {
   font-size: 5rem;
   text-align: center;
   color: #f3f393;
-  margin-top: 150px;
+  margin-top: 180px;
   -webkit-animation: glow 1.5s ease-in-out infinite alternate;
   -moz-animation: glow 1.5s ease-in-out infinite alternate;
   animation: glow 1.5s ease-in-out infinite alternate;
@@ -76,15 +76,24 @@ main {
   margin: 0 8px;
 }
 
-.h1-heading {
+.skills {
+  border-top: 2px solid #fefde5;
+  border-bottom: 3px solid #5061a7;
+  border-radius: 12px;
+  box-shadow: 0 0 13px #3e4497;
+  background-image: linear-gradient(#84afe8, #689bde);
+  margin-top: 30px;
+}
+
+.h1-skills {
   font-family: 'Nothing You Could Do', sans-serif;
-  font-size: 3.3rem;
+  font-size: 3rem;
   color: white;
-  text-shadow: 1px 1px 1px #222670;
+  text-shadow: 2px 2px 1px #3b4093;
 }
 
 .developer-icons-div {
-  margin: 40px 0;
+  margin: 30px 0;
   text-align: center;
   color: white;
   display: flex;
@@ -103,7 +112,7 @@ main {
   visibility: hidden;
   font-size: 1rem;
   margin-top: -5px;
-  font-family: 'Copse', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .developer-icon:hover {
@@ -119,6 +128,42 @@ main {
   color: white;
   text-shadow: 0 0 10px #35427e;
 }
+
+.projects {
+  /* background-color: #3e42a4; */
+  margin-top: 40px;
+}
+
+.h1-projects {
+  font-family: 'Nothing You Could Do', sans-serif;
+  font-size: 3rem;
+  color: #3b4093;
+  text-shadow: 2px 2px 1px #383f8f;
+}
+
+/* .project-div {
+  width: 500px;
+  position: relative;
+  border: 1px solid black; */
+/* } */
+
+.project-div img {
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+} 
+
+.project-img-top:hover {
+  opacity: 0;
+}
+
+
 
 @keyframes glow {
   from {

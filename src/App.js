@@ -1,8 +1,8 @@
 import React from 'react'
 import { ParallaxProvider, ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
-import { Container } from '@mui/material';
+import { Container, Grid } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnglesDown, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
+import { faAnglesDown, faQuoteLeft, faQuoteRight, faStar } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import './index.css'
 
@@ -14,6 +14,12 @@ import layer5 from './images/5.png'
 import layer6 from './images/6.png'
 import layer7 from './images/7.png'
 import layer8 from './images/8.png'
+import avocado1 from './images/avocado-1.png'
+import avocado2 from './images/avocado-2.png'
+// import lilbean1 from './images/lilbean-1.png'
+// import lilbean2 from './images/lilbean-2.png'
+// import typingFruits1 from './images/typing-fruits-1.png'
+// import typingFruits2 from './images/typing-fruits-2.png'
 
 function App() {
   return (
@@ -94,8 +100,9 @@ function App() {
         <p className='author'><i>--Norman Vincent Peale</i></p>
       </Container>
 
-      <Container maxWidth='lg'>
-        <h1 className='h1-heading'>Programming Skills</h1>
+      <Container className='skills' maxWidth='lg'>
+        {/* <FontAwesomeIcon icon={faStar} />  */}
+        <h1 className='h1-skills'>Programming Skills</h1>
         <div className='developer-icons-div'>
           <div className='developer-icon'>
             <i className="devicon-javascript-plain "> </i>
@@ -142,11 +149,26 @@ function App() {
             <p className="developer-icon-name">Bootstrap</p>
           </div>
           <div className='developer-icon'>
-            <i className="devicon-photoshop-line"> </i> 
+            <i className="devicon-photoshop-line"> </i>
             <p className="developer-icon-name">Photoshop</p>
           </div>
         </div>
       </Container>
+
+      <Container className='projects' maxWidth='lg'>
+        <h1 className='h1-projects'>Projects</h1>
+
+        <div className='project-div'>
+          <a href='https://thegoodavocado.netlify.app/' target='_blank' rel='noopener noreferrer'>
+            <img className='project-img-bottom' src={avocado2}></img>
+            <img className='project-img-top' src={avocado1}></img>
+          </a>
+          <p> Hello about project </p>
+        </div>
+        
+      </Container>
+
+
 
 
     </main>
