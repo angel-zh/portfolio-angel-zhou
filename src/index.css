@@ -149,7 +149,7 @@ main {
 
 
 .image-div {
-  width: 540px;
+  width: 535px;
   height: 350px;
   border-radius: 10px;
   border-bottom: 1px solid #5061a7;
@@ -178,7 +178,7 @@ main {
 
 .image-div img {
   position: absolute;
-  width: 540px;
+  width: 535px;
   height: 350px;
   object-fit: cover;
   border-radius: 10px;
@@ -199,6 +199,7 @@ main {
 }
 
 .description-right, .description-left {
+  width: 280px;
   color: #35427e;
   text-align: center;
   background: linear-gradient(#84afe8, #6e89e4);

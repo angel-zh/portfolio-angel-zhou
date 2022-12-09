@@ -20,8 +20,8 @@ import avocado1 from './images/avocado-1.png'
 import avocado2 from './images/avocado-2.png'
 import lilbean1 from './images/lilbean-1.png'
 import lilbean2 from './images/lilbean-2.png'
-// import typingFruits1 from './images/typing-fruits-1.png'
-// import typingFruits2 from './images/typing-fruits-2.png'
+import typingFruits1 from './images/typing-fruits-1.png'
+import typingFruits2 from './images/typing-fruits-2.png'
 
 function App() {
   return (
@@ -248,6 +248,29 @@ function App() {
           </div>
         </div>
       
+        <div className='project-div'>
+          <div className='image-div'>
+            <a href='https://angel-zh.github.io/typing-fruits-game/' target='_blank' rel='noopener noreferrer'>
+              <img className='project-img-bottom' src={typingFruits2}></img>
+              <img className='project-img-top' src={typingFruits1}></img>
+            </a>
+          </div>
+          <div className='description-left'>
+            <h2>Typing Fruits</h2>
+            <h3>Typing Game</h3>
+            <p>
+              <i className="devicon-html5-plain project-icon"></i>
+              <i className="devicon-css3-plain project-icon"></i>
+              <i className="devicon-javascript-plain project-icon"></i>
+            </p>
+            <a href='https://angel-zh.github.io/typing-fruits-game/' target='_blank' rel='noopener noreferrer'>
+              <button><FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Demo</button>
+            </a>
+            <a href='https://github.com/angel-zh/typing-fruits-game' target='_blank' rel='noopener noreferrer'>
+              <button><FontAwesomeIcon icon={faCode} /> Code</button>
+            </a>
+          </div>
+        </div>
     </Container>
 
 
