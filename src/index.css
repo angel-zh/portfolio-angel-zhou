@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #6197de;
+  font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -81,14 +82,15 @@ main {
   border-bottom: 3px solid #5061a7;
   border-radius: 12px;
   box-shadow: 0 0 13px #3e4497;
-  background-image: linear-gradient(#84afe8, #689bde);
+  background-image: linear-gradient(#84afe8, #6e89e4);
   margin-top: 30px;
 }
 
-.h1-skills {
+.h1-skills, .h1-projects {
   font-family: 'Nothing You Could Do', sans-serif;
   font-size: 3rem;
   color: white;
+  text-align: center;
   text-shadow: 2px 2px 1px #3b4093;
 }
 
@@ -108,6 +110,10 @@ main {
   padding-top: 10px;
 }
 
+.developer-fa {
+  filter: drop-shadow(0 0 8px #242f61);
+}
+
 .developer-icon-name {
   visibility: hidden;
   font-size: 1rem;
@@ -122,6 +128,11 @@ main {
   text-shadow: 0 0 20px #d3f8fb;
   transition-duration: 0.3s;
 }
+
+.developer-fa:hover {
+  filter: drop-shadow(0 0 20px #d3f8fb);
+}
+
 .developer-icon:hover .developer-icon-name {
   visibility: visible;
   font-size: 1rem;
@@ -130,26 +141,44 @@ main {
 }
 
 .projects {
-  /* background-color: #3e42a4; */
-  margin-top: 40px;
+  margin-top: 80px;
+  border-top: 2px solid #fefde5;
+  border-radius: 12px;
+  /* background-color: #5d59b4; */
 }
 
-.h1-projects {
-  font-family: 'Nothing You Could Do', sans-serif;
-  font-size: 3rem;
-  color: #3b4093;
-  text-shadow: 2px 2px 1px #383f8f;
+
+.image-div {
+  width: 540px;
+  height: 350px;
+  border-radius: 10px;
+  border-bottom: 1px solid #5061a7;
+  box-shadow: 1px 1px 13px #3e4497;
+  transition-duration: 0.3s;
+  background: #3e4497;
+  z-index: 200;
 }
 
-/* .project-div {
-  width: 500px;
-  position: relative;
-  border: 1px solid black; */
-/* } */
+.project-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
 
-.project-div img {
+.project-div h2 {
+  color: white;
+  text-shadow: 1px 1px 1px #3b4093;
+}
+
+.project-div h3 {
+  margin-top: -20px;
+}
+
+.image-div img {
   position: absolute;
-  width: 500px;
+  width: 540px;
   height: 350px;
   object-fit: cover;
   border-radius: 10px;
@@ -163,6 +192,48 @@ main {
   opacity: 0;
 }
 
+.image-div:hover {
+  transition-duration: 0.3s;
+  border-bottom: 1px solid #e5e5b5;
+  box-shadow: 1px 1px 10px #fafbd0;
+}
+
+.description-right, .description-left {
+  color: #35427e;
+  text-align: center;
+  background: linear-gradient(#84afe8, #6e89e4);
+  padding: 0 200px 25px 15px;
+  box-shadow: 1px 1px 5px #5d59b4;
+  border-radius: 3px;
+  border-top: 1px solid #fefde5;
+}
+
+.description-left {
+  padding: 0 15px 25px 200px;
+}
+
+.project-icon {
+  font-size: 2.2rem;
+}
+
+button {
+  padding: 6px 10px;
+  font-size: 1rem;
+  color: white;
+  margin: 0 7px;
+  background-color: #3b4093;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px white;
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  transform: translate(2px, 2px);
+  transition-duration: 0.2s;
+  box-shadow: none;
+  background-color: #7974c8;
+}
 
 
 @keyframes glow {

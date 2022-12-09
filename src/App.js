@@ -2,7 +2,7 @@ import React from 'react'
 import { ParallaxProvider, ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 import { Container, Grid } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnglesDown, faQuoteLeft, faQuoteRight, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faAnglesDown, faArrowUpRightFromSquare, faCode, faL, faQuoteLeft, faQuoteRight, faStar } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import './index.css'
 
@@ -14,10 +14,12 @@ import layer5 from './images/5.png'
 import layer6 from './images/6.png'
 import layer7 from './images/7.png'
 import layer8 from './images/8.png'
+import pawsitters1 from './images/pawsitters-1.png'
+import pawsitters2 from './images/pawsitters-2.png'
 import avocado1 from './images/avocado-1.png'
 import avocado2 from './images/avocado-2.png'
-// import lilbean1 from './images/lilbean-1.png'
-// import lilbean2 from './images/lilbean-2.png'
+import lilbean1 from './images/lilbean-1.png'
+import lilbean2 from './images/lilbean-2.png'
 // import typingFruits1 from './images/typing-fruits-1.png'
 // import typingFruits2 from './images/typing-fruits-2.png'
 
@@ -105,7 +107,7 @@ function App() {
         <h1 className='h1-skills'>Programming Skills</h1>
         <div className='developer-icons-div'>
           <div className='developer-icon'>
-            <i className="devicon-javascript-plain "> </i>
+            <i className="devicon-javascript-plain"> </i>
             <p className="developer-icon-name">JavaScript</p>
           </div>
           <div className='developer-icon'>
@@ -148,6 +150,11 @@ function App() {
             <i className="devicon-bootstrap-plain"> </i>
             <p className="developer-icon-name">Bootstrap</p>
           </div>
+          
+          <div className='developer-icon'>
+            <FontAwesomeIcon icon={faL} className='developer-fa'/>
+            <p className="developer-icon-name">Liquid.js</p>
+          </div>
           <div className='developer-icon'>
             <i className="devicon-photoshop-line"> </i>
             <p className="developer-icon-name">Photoshop</p>
@@ -157,21 +164,96 @@ function App() {
 
       <Container className='projects' maxWidth='lg'>
         <h1 className='h1-projects'>Projects</h1>
+        <div className='project-div'>
+          <div className='description-div description-right'>
+            <h2>PawSitters</h2>
+            <h3>Pet-Sitting App</h3>
+            <p>
+              <i className="devicon-react-original project-icon"></i>
+              <i className="devicon-django-plain project-icon"></i>
+              <i className="devicon-postgresql-plain project-icon"></i>
+              <i className="devicon-python-plain project-icon"></i>
+              <i className="devicon-html5-plain project-icon"></i>
+              <i className="devicon-css3-plain project-icon"></i>
+              <i className="devicon-javascript-plain project-icon"></i>
+            </p>
+            <a href='https://github.com/angel-zh/react-pawsitters' target='_blank' rel='noopener noreferrer'>
+              <button><FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Demo</button>
+            </a>
+            <a href='https://github.com/angel-zh/react-pawsitters' target='_blank' rel='noopener noreferrer'>
+              <button><FontAwesomeIcon icon={faCode} /> Code</button>
+            </a>
+          </div>
+          <div className='image-div'>
+            <a href='https://github.com/angel-zh/react-pawsitters' target='_blank' rel='noopener noreferrer'>
+              <img className='project-img-bottom' src={pawsitters2}></img>
+              <img className='project-img-top' src={pawsitters1}></img>
+            </a>
+          </div>
+        </div>
 
         <div className='project-div'>
-          <a href='https://thegoodavocado.netlify.app/' target='_blank' rel='noopener noreferrer'>
-            <img className='project-img-bottom' src={avocado2}></img>
-            <img className='project-img-top' src={avocado1}></img>
-          </a>
-          <p> Hello about project </p>
+          <div className='image-div'>
+            <a href='https://thegoodavocado.netlify.app/' target='_blank' rel='noopener noreferrer'>
+              <img className='project-img-bottom' src={avocado2}></img>
+              <img className='project-img-top' src={avocado1}></img>
+            </a>
+          </div>
+          <div className='description-left'>
+            <h2>The Good Avocado</h2>
+            <h3>Restaurant Review App</h3>
+            <p>
+              <i className="devicon-react-original project-icon"></i>
+              <i className="devicon-mongodb-plain project-icon"></i>
+              <i className="devicon-nodejs-plain project-icon"></i>
+              <i className="devicon-express-original project-icon"></i>
+              <i className="devicon-html5-plain project-icon"></i>
+              <i className="devicon-css3-plain project-icon"></i>
+              <i className="devicon-javascript-plain project-icon"></i>
+            </p>
+            <a href='https://thegoodavocado.netlify.app/' target='_blank' rel='noopener noreferrer'>
+              <button><FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Demo</button>
+            </a>
+            <a href='https://github.com/angel-zh/Client-theGoodAvocado' target='_blank' rel='noopener noreferrer'>
+              <button><FontAwesomeIcon icon={faCode} /> Code</button>
+            </a>
+          </div>
         </div>
-        
-      </Container>
+
+        <div className='project-div'>
+          <div className='description-div description-right'>
+            <h2>LilBean</h2>
+            <h3>Baby Tracker App</h3>
+            <p>
+              <FontAwesomeIcon icon={faL} className='project-icon' />
+              <i className="devicon-mongodb-plain project-icon"></i>
+              <i className="devicon-nodejs-plain project-icon"></i>
+              <i className="devicon-express-original project-icon"></i>
+              <i className="devicon-html5-plain project-icon"></i>
+              <i className="devicon-css3-plain project-icon"></i>
+              <i className="devicon-javascript-plain project-icon"></i>
+            </p>
+            <a href='https://lilbeanapp.fly.dev/' target='_blank' rel='noopener noreferrer'>
+              <button><FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Demo</button>
+            </a>
+            <a href='https://github.com/angel-zh/lilbean-baby-tracker-app' target='_blank' rel='noopener noreferrer'>
+              <button><FontAwesomeIcon icon={faCode} /> Code</button>
+            </a>
+          </div>
+          <div className='image-div'>
+            <a href='https://lilbeanapp.fly.dev/' target='_blank' rel='noopener noreferrer'>
+              <img className='project-img-bottom' src={lilbean2}></img>
+              <img className='project-img-top' src={lilbean1}></img>
+            </a>
+          </div>
+        </div>
+      
+    </Container>
 
 
 
 
-    </main>
+    </main >
   )
 }
 
