@@ -2,12 +2,12 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #6197de;
+  background: linear-gradient(#478ec4, #7aa0f1, #bab7ff );
   font-family: 'Poppins', sans-serif;
 }
-
+/* #6197de */
 main {
-  height: 400vh;
+  height: 500vh;
 }
 
 
@@ -16,12 +16,18 @@ main {
   padding-bottom: 250px;
 }
 
+.banner-heading {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .banner-h1 {
   font-family: 'Arima Madurai', sans-serif;
   font-size: 5rem;
   text-align: center;
   color: #f3f393;
-  margin-top: 180px;
   -webkit-animation: glow 1.5s ease-in-out infinite alternate;
   -moz-animation: glow 1.5s ease-in-out infinite alternate;
   animation: glow 1.5s ease-in-out infinite alternate;
@@ -35,6 +41,56 @@ main {
   margin-top: -75px;
   text-shadow: 0 0 10px #242f61;
 }
+
+.stars-div {
+  color: #363874;
+}
+
+.star-1 {
+  position: absolute;
+  top: 120px;
+  left: 43%;
+  font-size: 2.3rem;
+  padding: 5px;
+}
+
+.star-2 {
+  position: absolute;
+  top: 375px;
+  left: 58%;
+  font-size: 2rem;
+  padding: 5px;
+  transform: rotate(45deg);
+}
+
+.star-3 {
+  position: absolute;
+  top: 315px;
+  left: 24%;
+  font-size: 1.8rem;
+  padding: 5px;
+  transform: rotate(20deg);
+}
+
+.star-4 {
+  position: absolute;
+  top: 180px;
+  left: 73%;
+  font-size: 1.8rem;
+  padding: 5px;
+  transform: rotate(30deg);
+}
+
+.star-1:hover, .star-2:hover, .star-3:hover, .star-4:hover {
+  color: #f7f1b3;
+}
+
+.star-clicked {
+  color: #f5ee9e;
+  filter: drop-shadow(1px 1px 15px #f1f1b6);
+  transition-duration: 0.2s;
+}
+
 .nav-icon-div {
   position: absolute; 
   top: 0;
@@ -48,7 +104,8 @@ main {
 }
 
 .nav-icon:hover {
-  color: #a6a5d2c4;
+  color: #f7f1b3;
+  filter: drop-shadow(0 0 10px #accde3)
 }
 
 .scroll-icon {
@@ -82,11 +139,11 @@ main {
   border-bottom: 3px solid #5061a7;
   border-radius: 12px;
   box-shadow: 0 0 13px #3e4497;
-  background-image: linear-gradient(#84afe8, #6e89e4);
+  background-image: linear-gradient(#85a4ee, #8081eb);
   margin-top: 30px;
 }
 
-.h1-skills, .h1-projects {
+.h1-skills, .h1-projects, .h1-about-me {
   font-family: 'Nothing You Could Do', sans-serif;
   font-size: 3rem;
   color: white;
@@ -100,7 +157,7 @@ main {
   color: white;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .developer-icon {
@@ -122,15 +179,15 @@ main {
 }
 
 .developer-icon:hover {
-  color: #35427e;
+  color: #303285;
   padding-top: 0;
   padding-bottom: 10px;
-  text-shadow: 0 0 20px #d3f8fb;
+  text-shadow: 0 0 20px #d3fafb;
   transition-duration: 0.3s;
 }
 
 .developer-fa:hover {
-  filter: drop-shadow(0 0 20px #d3f8fb);
+  filter: drop-shadow(0 0 20px #d3fafb);
 }
 
 .developer-icon:hover .developer-icon-name {
@@ -142,7 +199,7 @@ main {
 
 .projects {
   margin-top: 80px;
-  border-top: 2px solid #fefde5;
+  /* border-top: 2px solid #fefde5; */
   border-radius: 12px;
   /* background-color: #5d59b4; */
 }
@@ -181,7 +238,7 @@ main {
   width: 535px;
   height: 350px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   -o-transition: opacity 0.5s ease-in-out;
@@ -202,9 +259,9 @@ main {
   width: 280px;
   color: #35427e;
   text-align: center;
-  background: linear-gradient(#84afe8, #6e89e4);
+  background-image: linear-gradient(#85a4ee, #8081eb);
   padding: 0 200px 25px 15px;
-  box-shadow: 1px 1px 5px #5d59b4;
+  box-shadow: 1px 1px 8px #5d59b4;
   border-radius: 3px;
   border-top: 1px solid #fefde5;
 }
@@ -217,25 +274,91 @@ main {
   font-size: 2.2rem;
 }
 
-button {
+.project-div button {
   padding: 6px 10px;
-  font-size: 1rem;
-  color: white;
+  font-size: 1.1rem;
+  color: #3b4093;
   margin: 0 7px;
-  background-color: #3b4093;
+  background-color: white;
   border: none;
   border-radius: 2px;
-  box-shadow: 1px 1px 1px white;
-  transition-duration: 0.2s;
+  box-shadow: 0 0 5px #3b4093;
 }
 
-button:hover {
+.project-div button:hover {
+  background-color: #5e62b2;
+  color: white;
+  box-shadow: 0 0 5px white;
+}
+
+.project-div button:active {
   transform: translate(2px, 2px);
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   box-shadow: none;
-  background-color: #7974c8;
 }
 
+.about-me {
+  color: white;
+  border-top: 2px solid #fefde5;
+  border-bottom: 3px solid #5061a7;
+  border-radius: 12px;
+  box-shadow: 0 0 13px #3e4497;
+  background-image: linear-gradient(#85a4ee, #8081eb);
+  margin-top: 60px;
+  padding-bottom: 40px;
+}
+
+.about-me-div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: -30px;
+}
+
+.about-me-pic img {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #6e7ccd;
+  box-shadow: 0 0 7px #e1f1ff;
+  border-radius: 50%;
+  object-fit: cover;
+} 
+
+.about-me-desc {
+  width: 450px;
+  text-align: center;
+}
+
+
+.fade-in-bottom {
+  opacity: 0;
+  transform: translateY(15vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.3s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(20vw);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.5s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-20vw);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.5s ease-out;
+  will-change: opacity, visibility;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
 
 @keyframes glow {
   from {
