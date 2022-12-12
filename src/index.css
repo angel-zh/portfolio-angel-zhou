@@ -2,14 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(#478ec4, #7aa0f1, #bab7ff );
+  background: linear-gradient(#478ec4, #7aa0f1, #c9b7ff);
   font-family: 'Poppins', sans-serif;
+  background-repeat: no-repeat;
 }
 /* #6197de */
-main {
-  height: 500vh;
-}
-
 
 .banner {
   height: 100vh;
@@ -92,15 +89,20 @@ main {
 }
 
 .nav-icon-div {
-  position: absolute; 
-  top: 0;
+  position: fixed; 
+  top: 10px;
   right: 10px;
   z-index: 100;
 }
 
 .nav-icon {
-  margin: 5px;
+  font-size: 2.5rem;
+  margin: 3px;
   color: #363874;
+}
+
+.file-icon {
+  width: 35px;
 }
 
 .nav-icon:hover {
@@ -121,7 +123,6 @@ main {
   text-align: center;
   color: white;
   font-family: 'Poppins', sans-serif;
-  margin-top: -20px;
 }
 
 .author {
@@ -130,8 +131,13 @@ main {
   font-size: 1rem;
 }
 
+.quote-highlight {
+  color: #f3f393;
+}
+
 .quote-icon {
   margin: 0 8px;
+  filter: drop-shadow(1px 1px 2px #3b4093);
 }
 
 .skills {
@@ -140,7 +146,7 @@ main {
   border-radius: 12px;
   box-shadow: 0 0 13px #3e4497;
   background-image: linear-gradient(#85a4ee, #8081eb);
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .h1-skills, .h1-projects, .h1-about-me {
@@ -203,7 +209,6 @@ main {
   border-radius: 12px;
   /* background-color: #5d59b4; */
 }
-
 
 .image-div {
   width: 535px;
@@ -328,29 +333,38 @@ main {
   width: 450px;
   text-align: center;
 }
+.about-me-desc h2 {
+  text-shadow: 1px 1px 1px #3b4093;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+}
+
+.about-me-desc p {
+  margin-top: 2px;
+}
 
 
 .fade-in-bottom {
   opacity: 0;
   transform: translateY(15vh);
   visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.3s ease-out;
+  transition: opacity 0.7s ease-out, transform 1.3s ease-out;
   will-change: opacity, visibility;
 }
 
 .fade-in-right {
   opacity: 0;
-  transform: translateX(20vw);
+  transform: translateX(25vw);
   visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.5s ease-out;
+  transition: opacity 0.7s ease-out, transform 1.5s ease-out;
   will-change: opacity, visibility;
 }
 
 .fade-in-left {
   opacity: 0;
-  transform: translateX(-20vw);
+  transform: translateX(-25vw);
   visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.5s ease-out;
+  transition: opacity 0.7s ease-out, transform 1.5s ease-out;
   will-change: opacity, visibility;
 }
 

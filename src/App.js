@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { ParallaxProvider, ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 import { Container } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnglesDown, faArrowUpRightFromSquare, faCode, faL, faQuoteLeft, faQuoteRight, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faAnglesDown, faArrowUpRightFromSquare, faCode, faFileLines, faL, faQuoteLeft, faQuoteRight, faSquare, faStar } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import FadeInBottom from './components/FadeInBottom'
 import FadeInRight from './components/FadeInRight'
@@ -129,21 +129,21 @@ function App() {
 
 
       <div className='nav-icon-div'>
-        <a href='https://github.com/angel-zh' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faSquareGithub} className='nav-icon' size='3x' /></a>
-        <a href='https://www.linkedin.com/in/angel-q-zhou/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faLinkedin} className='nav-icon' size='3x' /></a>
+        <a href='https://github.com/angel-zh' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faSquareGithub} className='nav-icon' /></a><br />
+        <a href='https://www.linkedin.com/in/angel-q-zhou/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faLinkedin} className='nav-icon' /></a><br />
+        <a href='https://docs.google.com/document/d/1z5I7XAXyyFZh09DxDBj6HcFSKTCtfEoqTI3iEUT6ID8/edit?usp=sharing' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faFileLines} className='nav-icon file-icon' /></a>
       </div>
 
       <Container className='quote' maxWidth='md'>
         <p>
           <FontAwesomeIcon icon={faQuoteLeft} className='quote-icon' />
-          Shoot for the Moon. Even if you miss, you'll land among the stars.
+          Shoot for the <span className='quote-highlight'>moon</span>. Even if you miss, you'll land among the <span className='quote-highlight'>stars</span>.
           <FontAwesomeIcon icon={faQuoteRight} className='quote-icon' />
         </p>
         <p className='author'><i>--Norman Vincent Peale</i></p>
       </Container>
       <FadeInBottom>
         <Container className='skills' maxWidth='lg'>
-          {/* <FontAwesomeIcon icon={faStar} />  */}
           <h1 className='h1-skills'>Programming Skills</h1>
           <div className='developer-icons-div'>
             <div className='developer-icon'>
@@ -330,6 +330,7 @@ function App() {
             </div>
             <div className='about-me-desc'>
               <h2>Hi, I'm Angel.</h2>
+              <FontAwesomeIcon icon={faStar} />
               <p>I'm originally from Toronto, Canada, and now living in New York City. <br />
                 Being a software developer with a background in education and a passion for art, I utilize creativity to help me communicate ideas and solve problems. If I'm not coding, you will find me either digitally illustrating away on my iPad or snuggling with my dog, Cleo. </p>
             </div>
