@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(#478ec4, #7aa0f1, #c9b7ff);
+  background: linear-gradient(#4a91c8, #7aa0f1, #c9b7ff);
   font-family: 'Poppins', sans-serif;
   background-repeat: no-repeat;
 }
@@ -118,9 +118,15 @@ body {
   z-index: 100;
 }
 
+.divider-stars {
+  color: #f7f1b3;
+  filter: drop-shadow(1px 1px 15px #f1f1b6);
+  text-align: center;
+  margin-top: 30px;
+}
+
 .quote {
   font-size: 1.2rem;
-  text-align: center;
   color: white;
   font-family: 'Poppins', sans-serif;
 }
@@ -146,10 +152,11 @@ body {
   border-radius: 12px;
   box-shadow: 0 0 13px #3e4497;
   background-image: linear-gradient(#85a4ee, #8081eb);
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
 
-.h1-skills, .h1-projects, .h1-about-me {
+.h1-skills, .h1-projects, .h1-about-me, .h1-contact-me {
   font-family: 'Nothing You Could Do', sans-serif;
   font-size: 3rem;
   color: white;
@@ -204,10 +211,11 @@ body {
 }
 
 .projects {
-  margin-top: 80px;
-  /* border-top: 2px solid #fefde5; */
-  border-radius: 12px;
-  /* background-color: #5d59b4; */
+  margin-bottom: 80px;
+}
+
+.h1-projects {
+  margin: 10px 0 40px 0;
 }
 
 .image-div {
@@ -226,7 +234,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .project-div h2 {
@@ -279,24 +287,25 @@ body {
   font-size: 2.2rem;
 }
 
-.project-div button {
+.project-div button, .contact-me-form button {
   padding: 6px 10px;
   font-size: 1.1rem;
   color: #3b4093;
   margin: 0 7px;
   background-color: white;
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: 0 0 5px #3b4093;
 }
 
-.project-div button:hover {
+.project-div button:hover, .contact-me-form button:hover {
   background-color: #5e62b2;
   color: white;
   box-shadow: 0 0 5px white;
+  transition-duration: 0.3s;
 }
 
-.project-div button:active {
+.project-div button:active, .contact-me-form button:active  {
   transform: translate(2px, 2px);
   transition-duration: 0.1s;
   box-shadow: none;
@@ -305,25 +314,26 @@ body {
 .about-me {
   color: white;
   border-top: 2px solid #fefde5;
-  border-bottom: 3px solid #5061a7;
+  border-bottom: 3px solid #6c58b2;
   border-radius: 12px;
   box-shadow: 0 0 13px #3e4497;
   background-image: linear-gradient(#85a4ee, #8081eb);
-  margin-top: 60px;
+  margin: 20px 0 80px 0;
   padding-bottom: 40px;
+  
 }
 
 .about-me-div {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 .about-me-pic img {
-  width: 250px;
-  height: 250px;
-  border: 1px solid #6e7ccd;
+  width: 260px;
+  height: 260px;
+  border: 1px solid white;
   box-shadow: 0 0 7px #e1f1ff;
   border-radius: 50%;
   object-fit: cover;
@@ -343,6 +353,41 @@ body {
   margin-top: 2px;
 }
 
+.contact-me-form {
+  text-align: center;
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+
+.contact-me-form button {
+  margin-top: 10px;
+} 
+
+.h1-contact-me {
+  margin-bottom: 10px;
+}
+
+.msg-success {
+  margin-bottom: -80px;
+}
+
+.bottom-div {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-top: -18px;
+}
+
+.bottom-layer-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .fade-in-bottom {
   opacity: 0;
@@ -354,7 +399,7 @@ body {
 
 .fade-in-right {
   opacity: 0;
-  transform: translateX(25vw);
+  transform: translateX(10%);
   visibility: hidden;
   transition: opacity 0.7s ease-out, transform 1.5s ease-out;
   will-change: opacity, visibility;
@@ -362,7 +407,7 @@ body {
 
 .fade-in-left {
   opacity: 0;
-  transform: translateX(-25vw);
+  transform: translateX(-10%);
   visibility: hidden;
   transition: opacity 0.7s ease-out, transform 1.5s ease-out;
   will-change: opacity, visibility;
@@ -373,6 +418,7 @@ body {
   transform: none;
   visibility: visible;
 }
+
 
 @keyframes glow {
   from {

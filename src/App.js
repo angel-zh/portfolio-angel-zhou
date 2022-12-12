@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { ParallaxProvider, ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
-import { Container } from '@mui/material';
+import { Container, Divider } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesDown, faArrowUpRightFromSquare, faCode, faFileLines, faL, faQuoteLeft, faQuoteRight, faSquare, faStar } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import FadeInBottom from './components/FadeInBottom'
 import FadeInRight from './components/FadeInRight'
 import FadeInLeft from './components/FadeInLeft'
+import ContactMeForm from './components/ContactMeForm';
 import './index.css'
 
 import layer1 from './images/1.png'
@@ -25,7 +26,7 @@ import lilbean1 from './images/lilbean-1.png'
 import lilbean2 from './images/lilbean-2.png'
 import typingFruits1 from './images/typing-fruits-1.png'
 import typingFruits2 from './images/typing-fruits-2.png'
-import profilePic from './images/profile-pic.jpg'
+import aboutMePic from './images/about-me-pic.jpeg'
 
 function App() {
   const [isClickedStar1, setIsClickedStar1] = useState('false')
@@ -142,7 +143,13 @@ function App() {
         </p>
         <p className='author'><i>--Norman Vincent Peale</i></p>
       </Container>
+
       <FadeInBottom>
+        <div className='divider-stars'>
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} size='xl' />
+          <FontAwesomeIcon icon={faStar} />
+        </div>
         <Container className='skills' maxWidth='lg'>
           <h1 className='h1-skills'>Programming Skills</h1>
           <div className='developer-icons-div'>
@@ -201,9 +208,17 @@ function App() {
           </div>
         </Container>
       </FadeInBottom>
-      <Container className='projects' maxWidth='lg'>
-        <h1 className='h1-projects'>Projects</h1>
 
+      <FadeInBottom>
+        <div className='divider-stars'>
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} size='xl' />
+          <FontAwesomeIcon icon={faStar} />
+        </div>
+        <h1 className='h1-projects'>Projects</h1>
+      </FadeInBottom>
+
+      <Container className='projects' maxWidth='lg'>
         <FadeInLeft>
           <div className='project-div'>
             <div className='description-div description-right'>
@@ -322,11 +337,16 @@ function App() {
       </Container>
 
       <FadeInBottom>
+        <div className='divider-stars'>
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} size='xl' />
+          <FontAwesomeIcon icon={faStar} />
+        </div>
         <Container className='about-me' maxWidth='md'>
           <h1 className='h1-about-me'>About Me</h1>
           <div className='about-me-div'>
             <div className='about-me-pic'>
-              <img src={profilePic} alt='My Picture'></img>
+              <img src={aboutMePic} alt='My Picture'></img>
             </div>
             <div className='about-me-desc'>
               <h2>Hi, I'm Angel.</h2>
@@ -338,6 +358,17 @@ function App() {
         </Container>
       </FadeInBottom>
 
+      <div className='divider-stars'>
+        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} size='xl' />
+        <FontAwesomeIcon icon={faStar} />
+      </div>
+
+      <ContactMeForm />
+
+      <div className='bottom-div'>
+        <img src={layer4} className='bottom-layer-2'></img>
+      </div>
 
     </main >
   )
