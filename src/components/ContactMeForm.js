@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import { Button, Container, TextField } from '@mui/material';
+import { Container, TextField } from '@mui/material';
 import emailjs from '@emailjs/browser'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 const ContactMeForm = () => {
     const [form, setForm] = useState({
@@ -31,12 +33,10 @@ const ContactMeForm = () => {
     }
 
     return (
-        <Container>
-            <h1 className='h1-contact'>
+        <Container className='contact-me-form' maxWidth='sm'>
+            <h1 className='h1-contact-me'>
                 Contact Me
             </h1>
-
-
             <form onSubmit={handleSubmit}>
                 <TextField
                     type='text'
@@ -45,6 +45,9 @@ const ContactMeForm = () => {
                     variant='outlined'
                     value={form.value}
                     onChange={handleChange}
+                    size='small'
+                    fullWidth
+                    margin='dense'
                     required
                 />
                 <TextField
@@ -54,30 +57,37 @@ const ContactMeForm = () => {
                     variant='outlined'
                     value={form.email}
                     onChange={handleChange}
+                    size='small'
+                    fullWidth
+                    margin='dense'
                     required
                 />
                 <div>
-                <TextField
-                    name='message'
-                    label='Type Your Message Here'
-                    type='text'
-                    variant='outlined'
-                    multiline
-                    rows={4}
-                    value={form.message}
-                    onChange={handleChange}
-                    required
-                />
+                    <TextField
+                        name='message'
+                        label='Type Your Message Here'
+                        type='text'
+                        variant='outlined'
+                        multiline
+                        rows={5}
+                        value={form.message}
+                        onChange={handleChange}
+                        fullWidth
+                        margin='dense'
+                        required
+                    />
                 </div>
-                <Button variant='contained' type='submit'>Send Message</Button>
+                <button type='submit'><FontAwesomeIcon icon={faPaperPlane} /> Send Message</button>
             </form>
             {
                 msgSent ?
-                    <div className='msg-success'>Thank you. Your message has been successfully sent!</div>
+                    <div className='msg-success'>
+                        <p>Thank you for getting in touch! <br/>
+                        Your message has been successfully sent.</p>
+                    </div>
                     :
                     null
             }
-
         </Container>
     )
 }
