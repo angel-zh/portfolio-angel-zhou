@@ -2,11 +2,16 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(#4a91c8, #7aa0f1, #c9b7ff);
+  background: #6197de ;
   font-family: 'Poppins', sans-serif;
-  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
-/* #6197de */
+
+ main {
+  background: linear-gradient(#6197de, #7a96f1, #c9b7ff);
+  background-repeat: no-repeat;
+  padding-top: -30px;
+ }
 
 .banner {
   height: 100vh;
@@ -171,6 +176,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .developer-icon {
@@ -369,16 +375,17 @@ body {
 
 .msg-success {
   margin-bottom: -80px;
+  color: white;
 }
 
 .bottom-div {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 215px;
   margin-top: -18px;
 }
 
-.bottom-layer-2 {
+.bottom-layer{
   position: absolute;
   top: 0;
   right: 0;
@@ -389,9 +396,15 @@ body {
   object-fit: cover;
 }
 
+.to-top-icon {
+  position: absolute;
+  bottom: 130px;
+  right: 8px;
+}
+
 .fade-in-bottom {
   opacity: 0;
-  transform: translateY(15vh);
+  transform: translateY(13vh);
   visibility: hidden;
   transition: opacity 0.7s ease-out, transform 1.3s ease-out;
   will-change: opacity, visibility;
@@ -399,7 +412,7 @@ body {
 
 .fade-in-right {
   opacity: 0;
-  transform: translateX(10%);
+  transform: translateX(13vw);
   visibility: hidden;
   transition: opacity 0.7s ease-out, transform 1.5s ease-out;
   will-change: opacity, visibility;
@@ -407,7 +420,7 @@ body {
 
 .fade-in-left {
   opacity: 0;
-  transform: translateX(-10%);
+  transform: translateX(-13vw);
   visibility: hidden;
   transition: opacity 0.7s ease-out, transform 1.5s ease-out;
   will-change: opacity, visibility;
@@ -417,6 +430,7 @@ body {
   opacity: 1;
   transform: none;
   visibility: visible;
+  display: block;
 }
 
 
@@ -430,5 +444,20 @@ body {
     text-shadow:
     0 0 5px #accde3, 0 0 10px #accde3,
     0 0 20px #accde3, 0 0 40px #accde3;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .nav-icon-div {
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+  }
+}
+
+@media screen and (min-width: 1545px) {
+  .bottom-div {
+    height: 350px;
   }
 }
