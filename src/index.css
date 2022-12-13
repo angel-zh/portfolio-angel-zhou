@@ -55,8 +55,8 @@ body {
   left: 43%;
   font-size: 2.5rem;
   padding: 5px;
-  animation: beat 0.5s 3;
-  animation-delay: 1s;
+  animation: beat 0.5s 1;
+  animation-delay: 0.8s;
 }
 
 .star-2 {
@@ -66,6 +66,8 @@ body {
   font-size: 2.2rem;
   padding: 5px;
   transform: rotate(45deg);
+  animation: beat 0.5s 1;
+  animation-delay: 1.8s;
 }
 
 .star-3 {
@@ -75,6 +77,8 @@ body {
   font-size: 1.8rem;
   padding: 5px;
   transform: rotate(15deg);
+  animation: beat 0.5s 1;
+  animation-delay: 1.3s;
 }
 
 .star-4 {
@@ -84,6 +88,8 @@ body {
   font-size: 1.8rem;
   padding: 5px;
   transform: rotate(30deg);
+  animation: beat 0.5s 1;
+  animation-delay: 2.3s;
 }
 
 .star-1:hover, .star-2:hover, .star-3:hover, .star-4:hover {
@@ -243,7 +249,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .project-div h2 {
@@ -281,11 +287,12 @@ body {
   width: 280px;
   color: #35427e;
   text-align: center;
-  background-image: linear-gradient(#85a4ee, #8081eb);
+  background-image: linear-gradient(#999ef7, #9784f6);
   padding: 0 200px 25px 15px;
   box-shadow: 1px 1px 8px #5d59b4;
   border-radius: 3px;
   border-top: 1px solid #fefde5;
+  border-bottom: 1px solid #5d59b4;
 }
 
 .description-left {
@@ -400,8 +407,8 @@ body {
 
 .to-top-icon {
   position: absolute;
-  bottom: 130px;
-  right: 8px;
+  bottom: 555px;
+  right: 10px;
 }
 
 .fade-in-bottom {
