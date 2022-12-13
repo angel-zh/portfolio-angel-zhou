@@ -105,8 +105,8 @@ function App() {
         <h1 className='banner-h1'>Angel Zhou</h1>
         <h2 className='banner-h2'>Full-Stack Developer</h2>
       </Container>
-      <div className='stars-div'>
 
+      <div className='stars-div'>
         <span className={`star-1 ${isClickedStar1 ? '' : 'star-clicked'}`} onClick={handleToggleStar1} >
           <FontAwesomeIcon icon={faStar} />
         </span>
@@ -151,8 +151,10 @@ function App() {
           <AboutMe />
         </FadeInBottom>
 
-        <StarsDivider />
-        <ContactMeForm />
+        <div ref={ref}>
+          <StarsDivider />
+        </div>
+        <ContactMeForm  />
 
         <div className='bottom-div'>
           <img src={layer4} className='bottom-layer' alt=''></img>
