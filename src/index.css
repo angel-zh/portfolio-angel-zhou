@@ -48,12 +48,15 @@ body {
   color: #363874;
 }
 
+
 .star-1 {
   position: absolute;
   top: 120px;
   left: 43%;
   font-size: 2.5rem;
   padding: 5px;
+  animation: beat 0.5s 3;
+  animation-delay: 1s;
 }
 
 .star-2 {
@@ -326,7 +329,6 @@ body {
   background-image: linear-gradient(#85a4ee, #8081eb);
   margin: 20px 0 80px 0;
   padding-bottom: 40px;
-  
 }
 
 .about-me-div {
@@ -444,6 +446,12 @@ body {
     text-shadow:
     0 0 5px #accde3, 0 0 10px #accde3,
     0 0 20px #accde3, 0 0 40px #accde3;
+  }
+}
+
+@keyframes beat {
+  50% {
+    transform: scale(1.3);
   }
 }
 
