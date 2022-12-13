@@ -410,6 +410,15 @@ body {
   right: 10px;
 }
 
+footer {
+  color: white;
+  position: absolute;
+  z-index: 400;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .fade-in-bottom {
   opacity: 0;
   transform: translateY(13vh);

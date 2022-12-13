@@ -162,7 +162,11 @@ function App() {
           <span onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }) }}>
             <FontAwesomeIcon icon={faTurnUp} className='nav-icon to-top-icon' />
           </span>
+          <footer>
+          &copy; 2022 Angel Zhou
+        </footer>
         </div>
+        
       </main >
     </>
   )
