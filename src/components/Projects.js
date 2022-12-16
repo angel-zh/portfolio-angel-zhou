@@ -31,7 +31,7 @@ const Projects = () => {
                             <i className="devicon-css3-plain project-icon"></i>
                             <i className="devicon-javascript-plain project-icon"></i>
                         </p>
-                        <a href='https://github.com/angel-zh/react-pawsitters' target='_blank' rel='noopener noreferrer'>
+                        <a href='https://pawsitters.netlify.app/' target='_blank' rel='noopener noreferrer'>
                             <button><FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Demo</button>
                         </a>
                         <a href='https://github.com/angel-zh/react-pawsitters' target='_blank' rel='noopener noreferrer'>
@@ -39,7 +39,7 @@ const Projects = () => {
                         </a>
                     </div>
                     <div className='image-div'>
-                        <a href='https://github.com/angel-zh/react-pawsitters' target='_blank' rel='noopener noreferrer'>
+                        <a href='https://pawsitters.netlify.app/' target='_blank' rel='noopener noreferrer'>
                             <img className='project-img-bottom' src={pawsitters2} alt='PawSitters screenshot 2'></img>
                             <img className='project-img-top' src={pawsitters1} alt='PawSitters screenshot 1'></img>
                         </a>
