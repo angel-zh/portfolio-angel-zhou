@@ -41,9 +41,9 @@ function App() {
     setIsClickedStar4(!isClickedStar4);
   }
 
-  const ref = useRef(null)
+  const contactMe = useRef(null)
   const handleScrollOnClick = () => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' })
+    contactMe.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -151,7 +151,7 @@ function App() {
           <AboutMe />
         </FadeInBottom>
 
-        <div ref={ref}>
+        <div ref={contactMe}>
           <StarsDivider />
         </div>
         <ContactMeForm  />
