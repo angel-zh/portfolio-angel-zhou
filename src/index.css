@@ -99,7 +99,7 @@ body {
 .star-clicked {
   color: #f5ee9e;
   filter: drop-shadow(1px 1px 15px #f1f1b6);
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
 }
 
 .nav-icon-div {
@@ -470,7 +470,21 @@ footer {
   }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 570px) {
+  
+  .image-div {
+    width: 480px;
+  }
+  
+  .image-div img {
+    width: 480px;
+  } 
+
+
+}
+
+
+/* @media screen and (max-width: 690px) {
   .nav-icon-div {
     position: absolute; 
     top: 10px;
@@ -479,18 +493,10 @@ footer {
   }
 }
 
-@media screen and (max-width: 570px) {
-  .image-div {
-    width: 455px;
-  }
-  
-  .image-div img {
-    width: 455px;
-  } 
-}
+
 
 @media screen and (min-width: 1545px) {
   .bottom-div {
     height: 350px;
   }
-}
+} */
