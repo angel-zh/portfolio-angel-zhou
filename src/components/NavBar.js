@@ -17,7 +17,7 @@ const NavBar = ({ handleScrollOnClick }) => {
           <FontAwesomeIcon icon={faFileLines} className='nav-icon file-icon' />
         </a>
         <span onClick={handleScrollOnClick}>
-          <FontAwesomeIcon icon={faEnvelope} className='nav-icon file-icon' />
+          <FontAwesomeIcon icon={faEnvelope} className='nav-icon envelope-icon' />
         </span>
       </div>
     )

@@ -104,9 +104,11 @@ body {
 
 .nav-icon-div {
   position: fixed; 
-  top: 10px;
-  right: 10px;
+  top: 8px;
+  right: 8px;
   z-index: 100;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-icon {
@@ -115,7 +117,7 @@ body {
   color: #363874;
 }
 
-.file-icon {
+.file-icon, .envelope-icon {
   width: 35px;
 }
 
@@ -140,6 +142,7 @@ body {
 }
 
 .quote {
+  text-align: center;
   font-size: 1.2rem;
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -367,6 +370,7 @@ body {
 }
 
 .contact-me-form {
+  color: #363874;
   text-align: center;
   margin-top: -20px;
   padding-bottom: 20px;
@@ -409,10 +413,12 @@ body {
 }
 
 footer {
+  font-size: 0.9rem;
   color: white;
   position: absolute;
+  text-align: center;
   z-index: 400;
-  bottom: 0;
+  bottom: -10px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -468,23 +474,45 @@ footer {
   }
 }
 
-
-
-@media screen and (max-width: 576px) {
-  
-  .image-div {
-    width: 480px;
+@media screen and (max-width: 1130px) {
+  .description-right {
+    padding-right: 113px;
   }
-  
-  .image-div img {
-    width: 480px;
-  } 
-
-
+  .description-left {
+    padding-left: 113px;
+  }
 }
 
+@media screen and (max-width: 990px) {
+  .quote {
+    font-size: 1.1rem;
+  }
+  .author {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .developer-icon {
+    font-size: 3.5rem;
+  }
+  .developer-icon-name {
+    font-size: 0.85rem;
+  }
+  .project-reverse {
+    flex-direction: column-reverse;
+  }
+  .description-left, .description-right {
+    width: 520px;
+    padding: 0 0 25px 0;
+  }
+  footer {
+    width: 75%;
+  }
+}
 
 @media screen and (max-width: 780px) {
+  .quote {
+    font-size: 0.93rem;
+  }
   .skills {
     border-radius: 0%;
     margin-bottom: 45px;
@@ -496,37 +524,60 @@ footer {
   .developer-icon {
     flex: 14.2%;
     margin: -15px -5px;
-
-    font-size: 4rem !important;
+    font-size: 4rem;
   }
   .developer-icon-name {
-    font-size: 1rem !important;
+    font-size: 1rem;
+  }
+  .projects {
+    margin-bottom: 45px;
   }
   .about-me {
     border-radius: 0%;
+    padding-bottom: 20px;
+    margin-bottom: 45px;
+  }
+  .about-me-pic img {
+    width: 180px;
+    height: 180px;
+  }
+  .about-me-desc {
+    font-size: 0.95rem;
+    width: 600px;
+  }
+  .about-me-desc h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-div, .image-div img {
+    width: 480px;
+    height: 315px
+  }
+  .description-left, .description-right {
+    width: 470px;
+  }
+  .nav-icon-div {
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #a188e7c2;
+    width: 100vw;
+    top: 0;
+    right: 0;
+  }
+  .file-icon {
+    width: 27px;
   }
 }
 
 
-@media screen and (max-width: 1000px) {
-  
-  
-  .developer-icon {
-    font-size: 3.5rem;
-  }
-  .developer-icon-name {
-    font-size: 0.85rem;
-  }
-}
 
-@media screen and (max-width: 1130px) {
-  .description-right {
-    padding-right: 100px;
-  }
-  .description-left {
-    padding-left: 100px;
-  }
-}
+
+
+
+
+
 
 /* @media screen and (max-width: 690px) {
   .nav-icon-div {
