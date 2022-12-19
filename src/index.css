@@ -72,7 +72,7 @@ body {
 
 .star-3 {
   position: absolute;
-  top: 315px;
+  top: 320px;
   left: 24%;
   font-size: 1.9rem;
   padding: 5px;
@@ -83,7 +83,7 @@ body {
 
 .star-4 {
   position: absolute;
-  top: 180px;
+  top: 175px;
   left: 73%;
   font-size: 1.8rem;
   padding: 5px;
@@ -184,12 +184,11 @@ body {
   color: white;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   padding: 0 20px;
 }
 
 .developer-icon {
-  font-size: 4.8rem;
+  font-size: 4.5rem;
   text-shadow: 0 0 8px #242f61;
   transition-duration: 0.3s;
   padding-top: 10px;
@@ -220,7 +219,6 @@ body {
 
 .developer-icon:hover .developer-icon-name {
   visibility: visible;
-  font-size: 1rem;
   color: white;
   text-shadow: 0 0 10px #35427e;
 }
@@ -486,15 +484,49 @@ footer {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
+  .skills {
+    border-radius: 0%;
+    margin-bottom: 45px;
+  }
+  .developer-icons-div {
+    flex-flow: row wrap;
+    position: relative;
+  }
+  .developer-icon {
+    flex: 14.2%;
+    margin: -15px -5px;
 
+    font-size: 4rem !important;
+  }
+  .developer-icon-name {
+    font-size: 1rem !important;
+  }
+  .about-me {
+    border-radius: 0%;
+  }
 }
 
 
-@media screen and (max-width: 992px) {
-
+@media screen and (max-width: 1000px) {
+  
+  
+  .developer-icon {
+    font-size: 3.5rem;
+  }
+  .developer-icon-name {
+    font-size: 0.85rem;
+  }
 }
 
+@media screen and (max-width: 1130px) {
+  .description-right {
+    padding-right: 100px;
+  }
+  .description-left {
+    padding-left: 100px;
+  }
+}
 
 /* @media screen and (max-width: 690px) {
   .nav-icon-div {
