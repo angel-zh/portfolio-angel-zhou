@@ -470,7 +470,9 @@ footer {
   }
 }
 
-@media screen and (max-width: 570px) {
+
+
+@media screen and (max-width: 576px) {
   
   .image-div {
     width: 480px;
@@ -480,6 +482,16 @@ footer {
     width: 480px;
   } 
 
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+@media screen and (max-width: 992px) {
 
 }
 
