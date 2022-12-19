@@ -18,7 +18,7 @@ const Projects = () => {
     return (
         <Container className='projects' maxWidth='lg'>
             <FadeInLeft>
-                <div className='project-div'>
+                <div className='project-div project-reverse'>
                     <div className='description-div description-right'>
                         <h2>PawSitters</h2>
                         <h3>Pet-Sitting App</h3>
@@ -78,7 +78,7 @@ const Projects = () => {
             </FadeInRight>
 
             <FadeInLeft>
-                <div className='project-div'>
+                <div className='project-div project-reverse'>
                     <div className='description-div description-right'>
                         <h2>LilBean</h2>
                         <h3>Baby Tracker App</h3>
