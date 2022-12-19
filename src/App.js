@@ -163,7 +163,8 @@ function App() {
             <FontAwesomeIcon icon={faTurnUp} className='nav-icon to-top-icon' />
           </span>
           <footer>
-          &copy; 2022 Angel Zhou
+          &copy; 2022 Angel Zhou <br />
+          All visual elements, aside from icons, were self-produced.
         </footer>
         </div>
         
