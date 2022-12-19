@@ -9,13 +9,13 @@ const NavBar = ({ handleScrollOnClick }) => {
         <div className='nav-icon-div'>
         <a href='https://github.com/angel-zh' target='_blank' rel='noopener noreferrer'>
           <FontAwesomeIcon icon={faSquareGithub} className='nav-icon' />
-        </a><br />
+        </a>
         <a href='https://www.linkedin.com/in/angel-q-zhou/' target='_blank' rel='noopener noreferrer'>
           <FontAwesomeIcon icon={faLinkedin} className='nav-icon' />
-        </a><br />
+        </a>
         <a href='https://docs.google.com/document/d/1z5I7XAXyyFZh09DxDBj6HcFSKTCtfEoqTI3iEUT6ID8/edit?usp=sharing' target='_blank' rel='noopener noreferrer'>
           <FontAwesomeIcon icon={faFileLines} className='nav-icon file-icon' />
-        </a><br />
+        </a>
         <span onClick={handleScrollOnClick}>
           <FontAwesomeIcon icon={faEnvelope} className='nav-icon file-icon' />
         </span>
