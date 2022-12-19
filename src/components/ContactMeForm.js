@@ -37,6 +37,7 @@ const ContactMeForm = () => {
             <h1 className='h1-contact-me'>
                 Contact Me
             </h1>
+            <p>Have questions, suggestions, or comments? <br /> Feel free to drop me a message!</p>
             <form onSubmit={handleSubmit}>
                 <TextField
                     type='text'
