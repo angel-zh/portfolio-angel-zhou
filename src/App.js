@@ -19,7 +19,9 @@ import layer3 from './images/3.png'
 import layer4 from './images/4.png'
 import layer5 from './images/5.png'
 import layer6 from './images/6.png'
+import layer7 from './images/7.png'
 import layer8 from './images/8.png'
+import layer9 from './images/9.png'
 
 
 function App() {
@@ -62,12 +64,6 @@ function App() {
               shouldAlwaysCompleteAnimation={true}
             />
             <ParallaxBannerLayer
-              translateY={[0, 40]}
-              expanded={false}
-              shouldAlwaysCompleteAnimation={true}
-            >
-            </ParallaxBannerLayer>
-            <ParallaxBannerLayer
               image={layer3}
               speed={8}
               expanded={false}
@@ -80,18 +76,34 @@ function App() {
               shouldAlwaysCompleteAnimation={true}
             />
             <ParallaxBannerLayer
+              className='mobile-show'
               image={layer5}
+              speed={6}
+              expanded={false}
+              shouldAlwaysCompleteAnimation={true}
+            />
+              <ParallaxBannerLayer
+              className='mobile-hide'
+              image={layer6}
+              
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
             />
             <ParallaxBannerLayer
-              image={layer6}
+              image={layer7}
               translateY={[0, 25]}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
             />
             <ParallaxBannerLayer
+              className='mobile-show'
               image={layer8}
+              speed={6}
+              expanded={false}
+              shouldAlwaysCompleteAnimation={true}
+            />
+            <ParallaxBannerLayer
+              image={layer9}
               translateY={[0, 5]}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
