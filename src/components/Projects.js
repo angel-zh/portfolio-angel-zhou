@@ -48,10 +48,8 @@ const Projects = () => {
             <FadeInRight>
                 <div className='project-div'>
                     <div className='image-div'>
-                        <a href='https://thegoodavocado.netlify.app/' target='_blank' rel='noopener noreferrer'>
-                            <img className='project-img-bottom' src={avocado2} alt='Good Avocado screenshot 2'></img>
-                            <img className='project-img-top' src={avocado1} alt='Good Avocado screenshot 1'></img>
-                        </a>
+                        <img className='project-img-bottom' src={avocado2} alt='Good Avocado screenshot 2'></img>
+                        <img className='project-img-top' src={avocado1} alt='Good Avocado screenshot 1'></img>
                     </div>
                     <div className='description-left'>
                         <h2>The Good Avocado</h2>
@@ -97,10 +95,8 @@ const Projects = () => {
                         </a>
                     </div>
                     <div className='image-div'>
-                        <a href='https://lilbeanapp.fly.dev/' target='_blank' rel='noopener noreferrer'>
-                            <img className='project-img-bottom' src={lilbean2} alt='LilBean screenshot 2'></img>
-                            <img className='project-img-top' src={lilbean1} alt='LilBean screenshot 1'></img>
-                        </a>
+                        <img className='project-img-bottom' src={lilbean2} alt='LilBean screenshot 2'></img>
+                        <img className='project-img-top' src={lilbean1} alt='LilBean screenshot 1'></img>
                     </div>
                 </div>
             </FadeInLeft>
@@ -108,10 +104,8 @@ const Projects = () => {
             <FadeInRight>
                 <div className='project-div'>
                     <div className='image-div'>
-                        <a href='https://angel-zh.github.io/typing-fruits-game/' target='_blank' rel='noopener noreferrer'>
-                            <img className='project-img-bottom' src={typingFruits2} alt='Typing Fruits screenshot 2'></img>
-                            <img className='project-img-top' src={typingFruits1} alt='Typing Fruits screenshot 1'></img>
-                        </a>
+                        <img className='project-img-bottom' src={typingFruits2} alt='Typing Fruits screenshot 2'></img>
+                        <img className='project-img-top' src={typingFruits1} alt='Typing Fruits screenshot 1'></img>
                     </div>
                     <div className='description-left'>
                         <h2>Typing Fruits</h2>
