@@ -48,7 +48,6 @@ body {
   color: #363874;
 }
 
-
 .star-1 {
   position: absolute;
   top: 120px;
@@ -476,10 +475,10 @@ footer {
 
 @media screen and (max-width: 1130px) {
   .description-right {
-    padding-right: 113px;
+    padding-right: 100px;
   }
   .description-left {
-    padding-left: 113px;
+    padding-left: 100px;
   }
 }
 
@@ -502,7 +501,7 @@ footer {
   }
   .description-left, .description-right {
     width: 520px;
-    padding: 0 0 25px 0;
+    padding: 0 0 20px 0;
   }
   footer {
     width: 75%;
@@ -551,13 +550,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  .image-div, .image-div img {
-    width: 480px;
-    height: 315px
-  }
-  .description-left, .description-right {
-    width: 470px;
-  }
   .nav-icon-div {
     flex-direction: row;
     justify-content: flex-end;
@@ -568,6 +560,102 @@ footer {
   }
   .file-icon {
     width: 27px;
+  }
+  .image-div, .image-div img {
+    width: 450px;
+    height: 300px
+  }
+  .description-left, .description-right {
+    width: 440px;
+  }
+  .project-div h2 {
+    margin-top: 5px;
+  }
+  .developer-icon {
+    font-size: 3.5rem;
+  }
+  .developer-icon-name {
+    font-size: 0.85rem;
+  }
+  .h1-skills, .h1-projects, .h1-about-me, .h1-contact-me {
+    font-size: 2.6rem;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .banner-h1 {
+    font-size: 4rem;
+  }
+  .banner-h2 {
+    font-size: 1.8rem;
+    margin-top: -60px;
+  }
+  .star-3 {
+    left: 16%;
+  }
+  .star-4 {
+    left: 77%;
+  }
+  .h1-skills, .h1-projects, .h1-about-me, .h1-contact-me {
+    font-size: 2.1rem;
+  }
+  .developer-icon {
+    flex: 18%;
+    font-size: 3.2rem;
+    margin: -15px -2px;
+  }
+  .developer-icon-name {
+    font-size: 0.8rem;
+  }
+  .h1-projects {
+    margin-bottom: 20px;
+  }
+  .project-div {
+    margin-bottom: 30px;
+  }
+  .image-div, .image-div img {
+    width: 335px;
+    height: 240px;
+  }
+  .description-left, .description-right {
+    width: 340px;
+  }
+  .project-div h2 {
+    font-size: 1.3rem;
+  }
+  .project-div h3 {
+    font-size: 1rem;
+  }
+  .project-icon {
+    font-size: 1.8rem;
+  }
+  .about-me-desc {
+    font-size: 0.90rem;
+  }
+  .about-me-desc h2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .banner-h1 {
+    font-size: 3.6rem;
+  }
+  .banner-h2 {
+    font-size: 1.6rem;
+    margin-top: -50px;
+  }
+  .star-3 {
+    left: 12%;
+  }
+  .star-4 {
+    left: 80%;
+  }
+  footer {
+    font-size: 0.7rem;
   }
 }
 
