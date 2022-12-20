@@ -44,6 +44,10 @@ body {
   text-shadow: 0 0 10px #242f61;
 }
 
+.mobile-show {
+  visibility: hidden;
+}
+
 .stars-div {
   color: #363874;
 }
@@ -637,6 +641,12 @@ footer {
   }
   .about-me-desc h2 {
     font-size: 1.1rem;
+  }
+  .mobile-hide {
+    visibility: hidden;
+  }
+  .mobile-show {
+    visibility: visible;
   }
 }
 
