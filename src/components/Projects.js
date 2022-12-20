@@ -39,10 +39,8 @@ const Projects = () => {
                         </a>
                     </div>
                     <div className='image-div'>
-                        <a href='https://pawsitters.netlify.app/' target='_blank' rel='noopener noreferrer'>
-                            <img className='project-img-bottom' src={pawsitters2} alt='PawSitters screenshot 2'></img>
-                            <img className='project-img-top' src={pawsitters1} alt='PawSitters screenshot 1'></img>
-                        </a>
+                        <img className='project-img-bottom' src={pawsitters2} alt='PawSitters screenshot 2'></img>
+                        <img className='project-img-top' src={pawsitters1} alt='PawSitters screenshot 1'></img>
                     </div>
                 </div>
             </FadeInLeft>
