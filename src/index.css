@@ -20,7 +20,7 @@ body {
 
 .banner-heading {
   position: absolute;
-  top: 250px;
+  top: 265px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -54,7 +54,7 @@ body {
 
 .star-1 {
   position: absolute;
-  top: 120px;
+  top: 135px;
   left: 43%;
   font-size: 2.5rem;
   padding: 5px;
@@ -64,7 +64,7 @@ body {
 
 .star-2 {
   position: absolute;
-  top: 360px;
+  top: 375px;
   left: 58%;
   font-size: 2.2rem;
   padding: 5px;
@@ -75,7 +75,7 @@ body {
 
 .star-3 {
   position: absolute;
-  top: 320px;
+  top: 335px;
   left: 24%;
   font-size: 1.9rem;
   padding: 5px;
@@ -86,7 +86,7 @@ body {
 
 .star-4 {
   position: absolute;
-  top: 175px;
+  top: 195px;
   left: 73%;
   font-size: 1.8rem;
   padding: 5px;
