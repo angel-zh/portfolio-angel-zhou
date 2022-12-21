@@ -243,8 +243,6 @@ body {
   border-radius: 10px;
   border-bottom: 1px solid #5061a7;
   box-shadow: 1px 1px 13px #3e4497;
-  transition-duration: 0.3s;
-  background: #3e4497;
   z-index: 200;
 }
 
