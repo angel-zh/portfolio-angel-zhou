@@ -1,11 +1,12 @@
 import React, { useRef } from 'react'
-import { ParallaxProvider } from "react-scroll-parallax";
+import { ParallaxProvider } from "react-scroll-parallax"
 import BannerBackground from './components/BannerBackground'
 import BannerTitle from './components/BannerTitle'
 import Quote from './components/Quote'
 import FadeInBottom from './components/FadeInBottom'
 import FadeInRight from './components/FadeInRight'
 import NavBar from './components/NavBar'
+import ScrollToTopIcon from './components/ScrollToTopIcon'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import AboutMe from './components/AboutMe'
@@ -13,7 +14,6 @@ import ContactMeForm from './components/ContactMeForm'
 import StarsDivider from './components/StarsDivider'
 import Footer from './components/Footer'
 import './index.css'
-
 
 function App() {
   const contactMe = useRef(null)
@@ -28,6 +28,7 @@ function App() {
       </ParallaxProvider>
       <BannerTitle />
       <NavBar handleScrollOnClick={handleScrollOnClick} />
+      <ScrollToTopIcon />
 
       <main>
         <Quote />

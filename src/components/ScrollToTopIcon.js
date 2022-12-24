@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleUp } from '@fortawesome/free-solid-svg-icons'
 
 const ScrollToTopIcon = () => {
   const [showIcon, setShowIcon] = useState(false)
@@ -13,7 +14,7 @@ const ScrollToTopIcon = () => {
   }
 
   const handleClick = () => {
-    window.scrollTo({ top:0, left: 0, behavior: 'smooth' })
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
   }
 
   useEffect(() => {
@@ -23,8 +24,16 @@ const ScrollToTopIcon = () => {
     }
   }, [])
 
-  return(
-    <></>
+  return (
+    <>
+      {showIcon ?
+        <span onClick={handleClick}>
+          <FontAwesomeIcon icon={faCircleUp} className='nav-icon to-top-icon' />
+        </span>
+        :
+        null
+      }
+    </>
   )
 }
 
