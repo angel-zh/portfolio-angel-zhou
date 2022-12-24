@@ -26,7 +26,7 @@ const BannerTitle = () => {
         <>
             <Container className='banner-heading' maxWidth='lg'>
                 <h1 className='banner-h1'>Angel Zhou</h1>
-                <h2 className='banner-h2'>Full-Stack Developer</h2>
+                <h2 className='banner-h2'>Full Stack Developer</h2>
             </Container>
 
             <div className='stars-div'>
