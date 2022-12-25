@@ -1,5 +1,5 @@
-import React from 'react'
-import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
+import React, { useEffect, useState } from 'react'
+import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 
@@ -14,6 +14,24 @@ import layer8 from '../images/8.png'
 import layer9 from '../images/9.png'
 
 const BannerBackground = () => {
+  const [showIcon, setShowIcon] = useState(true)
+
+  const handleScroll = () => {
+    if (window.pageYOffset >= 200) {
+      setShowIcon(false)
+    } else {
+      setShowIcon(true)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+
   return (
     <header>
       <ParallaxBanner className='banner'>
@@ -71,8 +89,14 @@ const BannerBackground = () => {
           translateY={[0, 5]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
-          children={<FontAwesomeIcon icon={faAnglesDown} size='2x' className='scroll-icon' bounce />}
-        />
+        >
+          {
+            showIcon ?
+              <FontAwesomeIcon icon={faAnglesDown} className='scroll-down-icon' bounce />
+              :
+              null
+          }
+        </ParallaxBannerLayer>
       </ParallaxBanner>
     </header>
   )
