@@ -129,6 +129,7 @@ main {
 }
 
 .nav-icon:hover {
+  opacity: 1;
   color: #f7f1b3;
   filter: drop-shadow(0 0 10px #accde3)
 }
@@ -137,7 +138,7 @@ main {
   font-size: 1.8rem;
   color: #3e42a4;
   position: absolute;
-  top: 89vh;
+  top: 87vh;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
