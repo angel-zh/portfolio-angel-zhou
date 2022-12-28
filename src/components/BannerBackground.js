@@ -17,7 +17,7 @@ const BannerBackground = () => {
   const [showIcon, setShowIcon] = useState(true)
 
   const handleScroll = () => {
-    if (window.pageYOffset >= 200) {
+    if (window.pageYOffset >= 100) {
       setShowIcon(false)
     } else {
       setShowIcon(true)
