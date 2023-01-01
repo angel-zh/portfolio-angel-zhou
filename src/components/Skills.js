@@ -54,6 +54,10 @@ const Skills = () => {
                     <p className="developer-icon-name">Bootstrap</p>
                 </div>
                 <div className='developer-icon'>
+                    <i class="devicon-materialui-plain"></i>
+                    <p className="developer-icon-name">Material</p>
+                </div>
+                <div className='developer-icon'>
                     <FontAwesomeIcon icon={faL} className='developer-fa' />
                     <p className="developer-icon-name">Liquid.js</p>
                 </div>
