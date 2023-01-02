@@ -609,7 +609,7 @@ footer {
 
   .developer-icon {
     font-size: 3.5rem;
-    flex: 14.2%;
+    flex: 14%;
   }
 
   .developer-icon-name {
@@ -658,12 +658,12 @@ footer {
   }
 
   .developer-icon {
-    font-size: 2.7rem;
-    margin: -15px -2px;
+    font-size: 2.6rem;
+    margin: -15px -1px;
   }
 
   .developer-icon-name {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
   .h1-projects {
@@ -741,11 +741,11 @@ footer {
   }
 
   .developer-icon {
-    font-size: 2.65rem;
+    font-size: 2.5rem;
   }
 
   .developer-icon-name {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
   footer {
