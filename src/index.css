@@ -59,7 +59,7 @@ main {
   font-size: 2.5rem;
   padding: 5px;
   animation: beat 0.5s 1;
-  animation-delay: 0.8s;
+  animation-delay: 1s;
 }
 
 .star-2 {
@@ -70,7 +70,7 @@ main {
   padding: 5px;
   transform: rotate(45deg);
   animation: beat 0.5s 1;
-  animation-delay: 1.8s;
+  animation-delay: 2s;
 }
 
 .star-3 {
@@ -81,7 +81,7 @@ main {
   padding: 5px;
   transform: rotate(15deg);
   animation: beat 0.5s 1;
-  animation-delay: 1.3s;
+  animation-delay: 1.5s;
 }
 
 .star-4 {
@@ -92,7 +92,7 @@ main {
   padding: 5px;
   transform: rotate(30deg);
   animation: beat 0.5s 1;
-  animation-delay: 2.3s;
+  animation-delay: 2.5s;
 }
 
 .star-1:hover,
@@ -741,11 +741,22 @@ footer {
   }
 
   .developer-icon {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   .developer-icon-name {
-    font-size: 0.6rem;
+    font-size: 0.57rem;
+  }
+
+  .image-div,
+  .image-div img {
+    width: 325px;
+    height: 235px;
+  }
+
+  .description-left,
+  .description-right {
+    width: 315px;
   }
 
   footer {
