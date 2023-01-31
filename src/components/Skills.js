@@ -55,7 +55,7 @@ const Skills = () => {
                 </div>
                 <div className='developer-icon'>
                     <i class="devicon-materialui-plain"></i>
-                    <p className="developer-icon-name">Material</p>
+                    <p className="developer-icon-name">MUI</p>
                 </div>
                 <div className='developer-icon'>
                     <FontAwesomeIcon icon={faL} className='developer-fa' />
