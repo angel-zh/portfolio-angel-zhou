@@ -119,7 +119,7 @@ main {
 
 .nav-icon {
   font-size: 2.5rem;
-  margin: 3px;
+  margin: 5px;
   color: #363874;
 }
 
@@ -527,7 +527,6 @@ footer {
 
   .skills {
     border-radius: 0%;
-    margin-bottom: 45px;
   }
 
   .developer-icons-div {
@@ -581,9 +580,12 @@ footer {
 
   .nav-icon-div {
     flex-direction: row;
-    justify-content: flex-end;
-    background-color: #a188e7c2;
+    justify-content:space-around;
+    background-color: #a58cea;
+    border-bottom: 1px solid #aa92ed;
+    box-shadow: 0px 2px 3px #736cba;
     width: 100vw;
+    padding-top: 3px;
     top: 0;
     right: 0;
   }
