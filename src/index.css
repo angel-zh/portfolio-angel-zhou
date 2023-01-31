@@ -117,10 +117,14 @@ main {
   flex-direction: column;
 }
 
+.nav-icon-div a {
+  margin: 5px;
+}
+
 .nav-icon {
   font-size: 2.5rem;
-  margin: 5px;
   color: #363874;
+  transition-duration: 0.2s;
 }
 
 .file-icon,
@@ -128,10 +132,15 @@ main {
   width: 35px;
 }
 
+.envelope-icon {
+  margin-top: 1px;
+  margin-left: 5px;
+}
+
 .nav-icon:hover {
-  opacity: 1;
   color: #f7f1b3;
-  filter: drop-shadow(0 0 10px #accde3)
+  filter: drop-shadow(0 0 10px #accde3);
+  transition-duration: 0.1s;
 }
 
 .scroll-down-icon {
@@ -590,6 +599,10 @@ footer {
     right: 0;
   }
 
+  .envelope-icon {
+    margin-top: 5px;
+  }
+
   .file-icon {
     width: 27px;
   }
@@ -802,3 +815,4 @@ footer {
     opacity: 0.7;
   }
 }
+
