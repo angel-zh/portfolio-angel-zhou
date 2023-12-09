@@ -219,6 +219,7 @@ main {
   text-shadow: 0 0 8px #242f61;
   transition-duration: 0.3s;
   padding-top: 10px;
+  flex-basis: 11%;
 }
 
 .developer-fa {
@@ -543,12 +544,13 @@ footer {
   .developer-icons-div {
     flex-flow: row wrap;
     position: relative;
+    padding: 0;
   }
 
   .developer-icon {
-    flex: 14.2%;
     margin: -15px -5px;
     font-size: 4rem;
+    flex-basis: 17%;
   }
 
   .developer-icon-name {
@@ -626,7 +628,6 @@ footer {
 
   .developer-icon {
     font-size: 3.5rem;
-    flex: 14%;
   }
 
   .developer-icon-name {

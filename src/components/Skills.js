@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 import { Container } from '@mui/material';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faL } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShopify } from '@fortawesome/free-brands-svg-icons';
 
 
 const Skills = () => {
     return (
         <Container className='skills' maxWidth='lg'>
-            <h1 className='h1-skills'>Programming Skills</h1>
+            <h1 className='h1-skills'>Skill Set</h1>
             <div className='developer-icons-div'>
                 <div className='developer-icon'>
                     <i className="devicon-javascript-plain"></i>
@@ -75,11 +75,11 @@ const Skills = () => {
                 </div>
                 <div className='developer-icon'>
                     <i class="devicon-tailwindcss-plain"></i>
-                    <p className="developer-icon-name">Tailwind</p>
+                    <p className="developer-icon-name">Tailwindcss</p>
                 </div>
                 <div className='developer-icon'>
-                    <FontAwesomeIcon icon={faL} className='developer-fa' />
-                    <p className="developer-icon-name">Liquid.js</p>
+                    <FontAwesomeIcon icon={faShopify} className='developer-fa' />
+                    <p className="developer-icon-name">Shopify Liquid</p>
                 </div>
             </div>
         </Container>
