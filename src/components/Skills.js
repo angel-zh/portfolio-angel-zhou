@@ -22,6 +22,18 @@ const Skills = () => {
                     <p className="developer-icon-name">CSS</p>
                 </div>
                 <div className='developer-icon'>
+                    <i className="devicon-python-plain"></i>
+                    <p className="developer-icon-name">Python</p>
+                </div>
+                <div className='developer-icon'>
+                    <i class="devicon-ruby-plain"></i>
+                    <p className="developer-icon-name">Ruby</p>
+                </div>
+                <div className='developer-icon'>
+                    <i class="devicon-csharp-plain"></i>
+                    <p className="developer-icon-name">C#</p>
+                </div>
+                <div className='developer-icon'>
                     <i className="devicon-react-original"></i>
                     <p className="developer-icon-name">React</p>
                 </div>
@@ -30,12 +42,12 @@ const Skills = () => {
                     <p className="developer-icon-name">Django</p>
                 </div>
                 <div className='developer-icon'>
-                    <i className="devicon-python-plain"></i>
-                    <p className="developer-icon-name">Python</p>
+                    <i class="devicon-rails-plain"></i>
+                    <p className="developer-icon-name">Rails</p>
                 </div>
                 <div className='developer-icon'>
                     <i className="devicon-postgresql-plain"></i>
-                    <p className="developer-icon-name">Postgres</p>
+                    <p className="developer-icon-name">PostgreSQL</p>
                 </div>
                 <div className='developer-icon'>
                     <i className="devicon-mongodb-plain"> </i>
@@ -50,20 +62,24 @@ const Skills = () => {
                     <p className="developer-icon-name">Express</p>
                 </div>
                 <div className='developer-icon'>
+                    <i class="devicon-graphql-plain"></i>
+                    <p className="developer-icon-name">GraphQL</p>
+                </div>
+                <div className='developer-icon'>
+                    <i class="devicon-jquery-plain"></i>
+                    <p className="developer-icon-name">jQuery</p>
+                </div>
+                <div className='developer-icon'>
                     <i className="devicon-bootstrap-plain"></i>
                     <p className="developer-icon-name">Bootstrap</p>
                 </div>
                 <div className='developer-icon'>
-                    <i class="devicon-materialui-plain"></i>
-                    <p className="developer-icon-name">MUI</p>
+                    <i class="devicon-tailwindcss-plain"></i>
+                    <p className="developer-icon-name">Tailwind</p>
                 </div>
                 <div className='developer-icon'>
                     <FontAwesomeIcon icon={faL} className='developer-fa' />
                     <p className="developer-icon-name">Liquid.js</p>
-                </div>
-                <div className='developer-icon'>
-                    <i className="devicon-photoshop-line"></i>
-                    <p className="developer-icon-name">Photoshop</p>
                 </div>
             </div>
         </Container>
